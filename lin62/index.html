@@ -330,6 +330,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font-size:28px;
       line-height:1.45;
     }
+    /* 置底懸浮電話 CTA */
+.floating-phone-cta {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 760px;
+  z-index: 9999;
+  display: block;
+}
+
+.floating-phone-cta img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
     .cta p{margin:0 0 20px;color:rgba(255,255,255,.88)}
     .btn{
       display:inline-flex;
@@ -643,14 +660,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>看到這裡，林先生開始認真看待了，因為這些資料讓他看到，除了原本的治療與飲食控制之外，原來還可以從醣類消化與吸收的角度，來探討血糖管理。</p>
         <p>他沒有停掉原本的藥，也沒有改掉醫師交代的治療方式。只是決定在原本的生活管理之外，多做一件事，而且這一次，他不想吃幾天就自己下結論。</p>
         <p><span class="highlight">他給自己6個月。</span></p>
-
-        <section class="cta">
-          <div class="small">限時體驗</div>
-          <h3>告別起伏不定！新專利褐藻多酚</h3>
-          <p>填表登記想限時體驗優惠</p>
-          <!-- TODO: 將 #contact 換成實際表單網址 -->
-          <a class="btn" data-cta="register" href="#contact">馬上登記 →</a>
-        </section>
+        
+<a href="https://jah.to/PIC001" target="_blank" rel="noopener">
+  <img src="images/97cta.gif" alt="立即了解" style="width:100%; height:auto; display:block;">
+</a>
 
         <h2 class="section-title">吃了幾天沒看到「神奇數字」，女兒說：先別急著看高低</h2>
         <p>剛開始的時候，林先生其實沒有比較輕鬆。</p>
@@ -690,13 +703,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>這半年，林先生原本的藥物治療沒有停，飲食控制也沒有放掉；多做的，是從醣類消化、吸收的前端，再替餐後血糖多顧一道。</p>
         <p>對他而言，最大的差別不是某一次量到特別漂亮的數字。而是回頭看這半年，那些曾經最讓他提心吊膽的飯後起伏，終於慢慢變得比較好掌握。</p>
 
-        <section class="cta">
-          <div class="small">LINE 諮詢</div>
-          <h3>體驗醣類代謝解方，找回平穩節奏</h3>
-          <p>專業顧問 1 對 1 諮詢</p>
-          <!-- TODO: 將 #contact 換成實際 LINE 網址 -->
-          <a class="btn" data-cta="line" href="#contact">馬上了解 →</a>
-        </section>
+  <a href="https://jah.to/PIC002" target="_blank" rel="noopener">
+  <img src="images/98cta.gif" alt="立即了解" style="width:100%; height:auto; display:block;">
+</a>
 
         <h2 class="section-title">以前吃完飯像在等開獎，現在他終於可以好好吃一頓飯。</h2>
           <p>以前跟家人出去吃飯，林先生總有一個習慣。明明大家還在聊天，他腦中已經開始算：</p>
@@ -712,12 +721,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>林先生想了一下，只說：「以前我最怕的是吃完這一餐，血糖又不知道跑去哪裡。現在至少我不用每吃一口，都先擔心下一個數字。」</p>
           <p>對一個和糖尿病相處6年的人來說，這樣的改變或許沒有什麼戲劇性的瞬間。但能重新坐在餐桌前，好好把一頓飯吃完，已經是他很久沒有過的輕鬆。</p>
 
-        <section id="contact" class="contact">
-          <div class="eyebrow" style="margin-bottom:4px">CONSULTATION</div>
-          <strong>專業顧問1對1客製諮詢</strong><br>
-          <a class="phone" data-cta="phone" href="tel:0800363888">0800-363-888</a>
-          <!-- TODO: CTA 實際表單 / LINE 連結確定後，修改上方兩個 CTA 的 href -->
-        </section>
+<a href="https://jah.to/PIC001" target="_blank" rel="noopener">
+  <img src="images/97cta.gif" alt="立即了解" style="width:100%; height:auto; display:block;">
+</a>
+
 
         <div class="disclaimer">
           ※本頁內容僅供健康資訊參考，不作為醫療診斷、治療或處方依據；如有身體不適，請洽專業醫療人員。填寫表單或加入官方帳號後，您可能會收到產品資訊、優惠活動、健康資訊或客服聯繫等相關訊息。
@@ -733,20 +740,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </article>
   </main>
 
-  <aside class="sticky" id="stickyCta">
-    <div class="sticky-inner">
-      <div class="sticky-copy">
-        <strong>前20名來電贈代謝保養祕方</strong>
-        <span>專業顧問1對1客製諮詢｜限量釋出</span>
-      </div>
-      <div class="sticky-actions">
-        <a class="sticky-phone" data-cta="sticky-phone" href="tel:0800363888">0800-363-888</a>
-        <!-- TODO: 若之後有表單或 LINE，可把 #contact 換成正式 URL -->
-        <a class="sticky-btn" data-cta="sticky-more" href="#contact">馬上諮詢</a>
-        <button class="close-sticky" aria-label="關閉置底按鈕" onclick="document.getElementById('stickyCta').style.display='none'">×</button>
-      </div>
-    </div>
-  </aside>
+<!-- 置底懸浮電話 CTA -->
+<a href="tel:0800363888" class="floating-phone-cta">
+  <img src="images/99cta1.gif" alt="立即來電0800363888">
+</a>
 
   <script>
     // CTA 之後若要串 GTM，可直接監聽 data-cta。
