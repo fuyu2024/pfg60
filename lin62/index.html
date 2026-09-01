@@ -1,1 +1,745 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>糖尿病6年，飯後數字總讓他提心吊膽｜健康專題</title>
+  <meta name="description" content="62歲林先生與第二型糖尿病相處6年，從餐後血糖的焦慮，到重新看懂一段時間的變化。">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="糖尿病6年，飯後數字總讓他提心吊膽">
+  <meta property="og:description" content="62歲林先生持續6個月後：終於不用每餐都這麼緊張">
+  <meta property="og:type" content="article">
+  <meta name="theme-color" content="#0f4c5c">
+
+  <!-- TODO: 若之後要埋 GA4 / GTM，可放在這裡 -->
+
+  <style>
+    :root{
+      --bg:#f5f3ee;
+      --paper:#ffffff;
+      --ink:#1c262b;
+      --muted:#6d777b;
+      --teal:#0f4c5c;
+      --teal-2:#176b78;
+      --teal-soft:#eaf4f4;
+      --gold:#c59c61;
+      --gold-soft:#f7efe2;
+      --line:#e7e4dc;
+      --red:#a9473b;
+      --shadow:0 12px 40px rgba(26,45,49,.08);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(197,156,97,.08), transparent 28%),
+        var(--bg);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+      line-height:1.9;
+      font-size:18px;
+      padding-bottom:92px;
+    }
+
+    a{color:inherit}
+    img{max-width:100%;display:block}
+    .page{width:min(100%, 980px); margin:auto;}
+    .article{
+      width:min(calc(100% - 32px), 820px);
+      margin:28px auto 70px;
+      background:var(--paper);
+      box-shadow:var(--shadow);
+      border:1px solid rgba(15,76,92,.05);
+    }
+    .inner{padding:58px 72px;}
+    .masthead{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      padding:22px 30px;
+      border-bottom:1px solid var(--line);
+      background:rgba(255,255,255,.95);
+      position:sticky;
+      top:0;
+      z-index:20;
+      backdrop-filter:blur(10px);
+    }
+    .brand{
+      font-size:15px;
+      letter-spacing:.12em;
+      font-weight:800;
+      color:var(--teal);
+    }
+    .category{
+      font-size:13px;
+      color:var(--muted);
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:5px 12px;
+    }
+    .eyebrow{
+      font-size:13px;
+      font-weight:800;
+      letter-spacing:.16em;
+      color:var(--teal-2);
+      margin-bottom:14px;
+    }
+    h1{
+      margin:0;
+      font-family:Georgia,"Noto Serif TC","Times New Roman",serif;
+      font-size:clamp(34px,5.5vw,54px);
+      line-height:1.32;
+      letter-spacing:-.03em;
+    }
+    .dek{
+      margin:24px 0 0;
+      color:#4f5c61;
+      font-size:20px;
+      line-height:1.8;
+    }
+    .lead-quote{
+      margin:38px 0 22px;
+      padding:6px 0 6px 22px;
+      border-left:4px solid var(--gold);
+      font-size:28px;
+      line-height:1.5;
+      font-weight:800;
+      color:#2b4147;
+    }
+    p{margin:0 0 1.35em;}
+    .section-title{
+      margin:58px 0 24px;
+      padding-top:16px;
+      border-top:1px solid var(--line);
+      font-size:30px;
+      line-height:1.45;
+      font-family:Georgia,"Noto Serif TC","Times New Roman",serif;
+    }
+    .section-title::before{
+      content:"";
+      display:block;
+      width:58px;
+      height:4px;
+      margin:-18px 0 16px;
+      background:var(--gold);
+    }
+    .dialogue{
+      margin:24px 0;
+      padding:22px 26px;
+      background:#faf9f6;
+      border:1px solid var(--line);
+      border-radius:14px;
+      font-weight:700;
+      color:#33464c;
+    }
+    .dialogue p{margin:.35em 0}
+    .highlight{
+      padding:2px 5px;
+      background:linear-gradient(transparent 58%, #f3dfbd 58%);
+      font-weight:700;
+    }
+
+    .media{
+      margin:34px 0;
+      overflow:hidden;
+      border-radius:18px;
+      border:1px solid var(--line);
+      background:#f7f8f7;
+    }
+    .media-placeholder{
+      min-height:360px;
+      display:grid;
+      place-items:center;
+      padding:28px;
+      text-align:center;
+      background:
+        linear-gradient(135deg, rgba(15,76,92,.08), rgba(197,156,97,.08)),
+        #f8faf9;
+      color:#66777d;
+    }
+    .media-placeholder strong{
+      display:block;
+      color:var(--teal);
+      font-size:20px;
+      margin-bottom:8px;
+    }
+    figcaption{
+      padding:12px 16px 14px;
+      font-size:13px;
+      color:var(--muted);
+      border-top:1px solid var(--line);
+      background:#fff;
+    }
+
+    .video-placeholder{
+      aspect-ratio:16/9;
+      display:grid;
+      place-items:center;
+      color:#fff;
+      background:
+        linear-gradient(rgba(11,55,65,.55),rgba(11,55,65,.55)),
+        linear-gradient(135deg,#6f8f95,#c4b292);
+      position:relative;
+    }
+    .play{
+      width:72px;height:72px;border-radius:50%;
+      display:grid;place-items:center;
+      background:rgba(255,255,255,.94);
+      color:var(--teal);
+      font-size:28px;
+      box-shadow:0 8px 30px rgba(0,0,0,.14);
+      padding-left:4px;
+    }
+    .video-label{
+      position:absolute;
+      left:20px;bottom:16px;
+      font-size:14px;font-weight:700;
+    }
+
+    .pathway-card{
+      margin:34px 0;
+      padding:28px 24px;
+      border-radius:18px;
+      background:linear-gradient(180deg,#f4f9f8,#ffffff);
+      border:1px solid #dce9e7;
+    }
+    .pathway-title{
+      text-align:center;
+      font-size:21px;
+      font-weight:900;
+      color:var(--teal);
+      margin-bottom:8px;
+    }
+    .pathway-sub{
+      text-align:center;
+      font-size:14px;
+      color:var(--muted);
+      margin-bottom:24px;
+    }
+    .pathway{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+    }
+    .node{
+      min-width:108px;
+      padding:13px 12px;
+      background:#fff;
+      border:1px solid #d5e3e1;
+      border-radius:13px;
+      text-align:center;
+      font-weight:800;
+      font-size:14px;
+      line-height:1.45;
+      box-shadow:0 4px 14px rgba(15,76,92,.05);
+    }
+    .node.enzyme{background:var(--gold-soft);border-color:#ead8b8;color:#70522d}
+    .node.blood{background:#eef6f7;color:#0b5967}
+    .arrow{font-size:20px;color:#7b8d91;font-weight:900}
+
+    .research{
+      margin:36px 0;
+      padding:28px;
+      border-radius:18px;
+      border:1px solid #dfe8e8;
+      background:#fbfdfd;
+    }
+    .research-top{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-end;
+      gap:20px;
+      margin-bottom:22px;
+    }
+    .research h3{
+      margin:0;
+      color:var(--teal);
+      font-size:25px;
+      line-height:1.4;
+    }
+    .source{
+      font-size:12px;
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .trend-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+    }
+    .trend{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:15px;
+    }
+    .trend-name{
+      font-size:14px;font-weight:800;margin-bottom:10px;color:#425459;
+    }
+    .mini-chart{width:100%;height:88px;}
+    .chart-line{
+      stroke:var(--teal-2);
+      stroke-width:4;
+      fill:none;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+    }
+    .chart-grid{stroke:#dfe8e8;stroke-width:1}
+    .trend-foot{
+      font-size:11px;color:var(--muted);margin-top:5px;text-align:right;
+    }
+    .research-note{
+      margin-top:16px;
+      font-size:12px;
+      color:var(--muted);
+      line-height:1.6;
+    }
+
+    .cta{
+      margin:42px -24px;
+      padding:34px 30px;
+      border-radius:20px;
+      color:#fff;
+      background:
+        radial-gradient(circle at 90% 10%, rgba(255,255,255,.12), transparent 35%),
+        linear-gradient(135deg,#0f4c5c,#176b78);
+      text-align:center;
+      box-shadow:0 14px 34px rgba(15,76,92,.18);
+    }
+    .cta .small{
+      text-transform:uppercase;
+      letter-spacing:.13em;
+      font-size:12px;
+      opacity:.8;
+      font-weight:800;
+    }
+    .cta h3{
+      margin:8px 0 6px;
+      font-size:28px;
+      line-height:1.45;
+    }
+    .cta p{margin:0 0 20px;color:rgba(255,255,255,.88)}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      min-width:170px;
+      padding:14px 22px;
+      text-decoration:none;
+      border-radius:999px;
+      font-weight:900;
+      background:#fff;
+      color:var(--teal);
+      transition:.2s ease;
+    }
+    .btn:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(0,0,0,.12)}
+
+    .metric-card{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+      margin:28px 0;
+    }
+    .metric{
+      padding:20px;
+      border-radius:16px;
+      border:1px solid #e6dfd4;
+      background:#fcfaf6;
+    }
+    .metric strong{
+      display:block;
+      font-size:27px;
+      color:#77552b;
+      margin-bottom:4px;
+    }
+    .metric span{font-size:13px;color:var(--muted)}
+
+    .closing{
+      margin-top:55px;
+      padding:32px;
+      border-radius:20px;
+      background:#f8f5ee;
+      border:1px solid #e9e2d6;
+    }
+    .closing .big{
+      margin:0 0 18px;
+      font-family:Georgia,"Noto Serif TC","Times New Roman",serif;
+      font-size:29px;
+      line-height:1.55;
+      font-weight:800;
+      color:#33474c;
+    }
+
+    .contact{
+      margin:48px 0 0;
+      padding:26px;
+      text-align:center;
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:#fff;
+    }
+    .phone{
+      display:inline-block;
+      margin-top:8px;
+      font-size:30px;
+      font-weight:900;
+      color:var(--teal);
+      text-decoration:none;
+    }
+
+    .disclaimer{
+      margin-top:42px;
+      padding-top:22px;
+      border-top:1px solid var(--line);
+      font-size:12px;
+      color:#7b8183;
+      line-height:1.75;
+    }
+    .footer-links{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:10px 18px;
+      margin-top:18px;
+      font-size:12px;
+      color:#5d696d;
+    }
+    .footer-links a{text-decoration:none}
+
+    .sticky{
+      position:fixed;
+      left:0;right:0;bottom:0;
+      z-index:50;
+      padding:10px 16px;
+      background:rgba(16,46,53,.96);
+      color:#fff;
+      box-shadow:0 -5px 22px rgba(0,0,0,.16);
+      backdrop-filter:blur(10px);
+    }
+    .sticky-inner{
+      width:min(100%,900px);
+      margin:auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+    }
+    .sticky-copy{line-height:1.35}
+    .sticky-copy strong{display:block;font-size:15px}
+    .sticky-copy span{font-size:12px;opacity:.78}
+    .sticky-actions{display:flex;align-items:center;gap:10px}
+    .sticky-phone{
+      color:#fff;text-decoration:none;font-size:20px;font-weight:900;
+      white-space:nowrap;
+    }
+    .sticky-btn{
+      text-decoration:none;
+      background:#e6c38e;
+      color:#28373b;
+      font-weight:900;
+      border-radius:999px;
+      padding:10px 16px;
+      white-space:nowrap;
+      font-size:14px;
+    }
+    .close-sticky{
+      border:0;background:transparent;color:#fff;opacity:.7;font-size:20px;cursor:pointer;
+    }
+
+    @media (max-width:720px){
+      body{font-size:17px;padding-bottom:110px}
+      .article{width:100%;margin:0;background:#fff;border:0;box-shadow:none}
+      .masthead{padding:14px 18px}
+      .inner{padding:36px 22px 54px}
+      .category{display:none}
+      .dek{font-size:18px}
+      .lead-quote{font-size:24px}
+      .section-title{font-size:26px;margin-top:48px}
+      .media-placeholder{min-height:270px}
+      .trend-grid{grid-template-columns:1fr}
+      .research-top{display:block}
+      .source{margin-top:6px;white-space:normal}
+      .cta{margin:36px -4px;padding:30px 18px}
+      .cta h3{font-size:24px}
+      .metric-card{grid-template-columns:1fr}
+      .closing{padding:24px 20px}
+      .closing .big{font-size:25px}
+      .sticky-inner{align-items:center}
+      .sticky-copy span{display:none}
+      .sticky-phone{font-size:17px}
+      .sticky-btn{padding:9px 12px;font-size:13px}
+    }
+
+    @media (max-width:480px){
+      .sticky-copy strong{font-size:13px}
+      .sticky-actions{gap:7px}
+      .sticky-phone{font-size:15px}
+      .sticky-btn{font-size:12px;padding:8px 10px}
+      .close-sticky{display:none}
+    }
+
+    @media (prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*:before,*:after{transition:none!important}
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <article class="article">
+      <header class="masthead">
+        <div class="brand">DAILY HEALTH</div>
+        <div class="category">健康專題｜代謝管理</div>
+      </header>
+
+      <div class="inner">
+        <div class="eyebrow">HEALTH FEATURE</div>
+        <h1>糖尿病6年，飯後數字總讓他提心吊膽！62歲林先生持續6個月後：終於不用每餐都這麼緊張</h1>
+        <p class="dek">他固定回診、按時服藥，也已經很注意飲食，但每次放下筷子後，最怕的仍是那個不知道會跑到哪裡的數字。</p>
+
+        <div class="lead-quote">「又上去了……」</div>
+        <p>晚餐才吃完兩個小時，62歲的林先生拿起血糖機，看了一眼螢幕上的數字，原本還在跟家人聊天的他，突然安靜了下來。</p>
+        <p>這樣的情況，他已經遇過太多次。</p>
+
+        <figure class="media">
+          <div class="video-placeholder">
+            <div class="play">▶</div>
+            <div class="video-label">影片位置｜之後可替換為實際影音</div>
+          </div>
+          <figcaption>影片區塊預留，可換成 YouTube、MP4 或廣告素材影片。</figcaption>
+        </figure>
+
+        <p>林先生罹患第二型糖尿病6年。這幾年，醫師交代的事情他其實都很配合。</p>
+        <p>固定回診、按時服藥，含糖飲料幾乎不碰，甜食也不像以前想吃就吃；就連三餐的飯量，他也比以前節制很多。</p>
+        <p>但就是吃完飯之後，總是讓他很有壓力。</p>
+        <p>有時候餐前看起來還好，一頓飯吃完，再量一次，數字卻又明顯往上。久而久之，他最怕的就是每次放下筷子之後，腦中總會開始想：「等等血糖又會跑到哪裡？」</p>
+
+        <!-- TODO IMAGE:
+             可將下方 placeholder 換成：
+             <img src="../assets/lin-glucose.jpg" alt="60歲左右男性在餐桌旁查看血糖機">
+        -->
+        <figure class="media">
+          <div class="media-placeholder">
+            <div>
+              <strong>人物情境圖位置</strong>
+              60歲左右的男人在餐桌旁看血糖機，表情有點凝重
+            </div>
+          </div>
+          <figcaption>情境示意圖</figcaption>
+        </figure>
+
+        <h2 class="section-title">藥有吃、甜食也戒了，為什麼飯後還是會失控？</h2>
+        <p>真正讓林先生開始改變，是女兒陪他回診後的一個晚上。</p>
+        <p>那天回家，女兒發現一件事。只要哪一次數字比較高，林先生下一個反應永遠都是：</p>
+
+        <div class="dialogue">
+          <p>「是不是飯吃太多？」</p>
+          <p>「是不是今天水果不該吃？」</p>
+          <p>「那我明天再少吃一點。」</p>
+        </div>
+
+        <p>爸爸其實已經比很多人認真。他不是不知道白飯會影響血糖，也不是天天喝飲料、吃蛋糕。</p>
+        <p>真正讓她好奇的是：為什麼一個已經這麼注意飲食、也有規律治療的人，吃完飯後的數字還是常常讓他這麼忐忑不安？</p>
+        <p>她開始查「餐後血糖」機制。這才發現，原來一餐吃進去之後，血糖會怎麼變化，不只是看吃了多少。</p>
+        <p>醣類進入身體後，還要經過消化、分解，再被腸道吸收。而這整段過程的速度，也會影響飯後血糖上升的情形。</p>
+
+        <div class="pathway-card" role="img" aria-label="醣類消化路徑示意圖">
+          <div class="pathway-title">一碗飯吃下去之後，醣類怎麼走？</div>
+          <div class="pathway-sub">餐後血糖的變化，和消化、分解、吸收速度都有關</div>
+          <div class="pathway">
+            <div class="node">🍚<br>澱粉</div><div class="arrow">→</div>
+            <div class="node enzyme">α-澱粉酶</div><div class="arrow">→</div>
+            <div class="node">較小的醣類</div><div class="arrow">→</div>
+            <div class="node enzyme">α-葡萄糖苷酶</div><div class="arrow">→</div>
+            <div class="node">葡萄糖</div><div class="arrow">→</div>
+            <div class="node">腸道吸收</div><div class="arrow">→</div>
+            <div class="node blood">進入血液</div>
+          </div>
+        </div>
+
+        <p>在查這些資料的時候，女兒注意到「褐藻多酚」這個海洋性多酚跟參與醣類分解的重要消化酵素──α-澱粉酶與 α-葡萄糖苷酶息息相關，有相關研究專門針對從這兩個醣類消化環節著手，探討抑制酵素活性後，是否能讓醣類不要那麼快被分解、吸收，進而幫助降低餐後血糖快速上升。</p>
+        <p>林先生聽完後，第一個反應是問了一句：「所以不是又要叫我少吃一點？」</p>
+        <p>女兒回他：「飯還是要控制，只是這次看的不只你吃多少，還要看吃進去之後發生什麼事。」</p>
+        <p>這句話，讓林先生第一次覺得：原來控血糖不只有「再少吃一點」這條路。</p>
+
+        <h2 class="section-title">女兒查到一份6個月人體試驗，這結果讓他決定試試看</h2>
+        <p>6年來，林先生看過的說法太多了，也經歷過好幾次聽哪個朋友推薦偏方之後燃起希望又落空。</p>
+        <p>所以他最在意的其實很簡單：「真的有人做過人體試驗嗎？」</p>
+        <p>女兒後來找到一項6個月的人體試驗，對象包含糖尿病前期與第二型糖尿病族群。研究資料中，幾項血糖相關指標在6個月後都呈現下降。</p>
+        <p>女兒甚至發現它有通過加拿大衛福部的功效認證，還有30項的國際專利。</p>
+
+        <!-- 建議正式上線前，再核對「加拿大衛福部功效認證／30項國際專利」的最終法規與來源表述。 -->
+        <section class="research">
+          <div class="research-top">
+            <div>
+              <div class="eyebrow" style="margin-bottom:6px">6-MONTH HUMAN STUDY</div>
+              <h3>6個月人體試驗</h3>
+            </div>
+            <div class="source">Derosa et al., SINut 2018</div>
+          </div>
+
+          <div class="trend-grid">
+            <div class="trend">
+              <div class="trend-name">空腹血糖 FPG</div>
+              <svg class="mini-chart" viewBox="0 0 220 90" aria-hidden="true">
+                <line class="chart-grid" x1="8" y1="72" x2="212" y2="72"/>
+                <polyline class="chart-line" points="12,22 55,31 98,43 142,55 205,66"/>
+              </svg>
+              <div class="trend-foot">0個月 → 6個月</div>
+            </div>
+            <div class="trend">
+              <div class="trend-name">餐後血糖 PPG</div>
+              <svg class="mini-chart" viewBox="0 0 220 90" aria-hidden="true">
+                <line class="chart-grid" x1="8" y1="72" x2="212" y2="72"/>
+                <polyline class="chart-line" points="12,27 55,34 98,42 142,50 205,61"/>
+              </svg>
+              <div class="trend-foot">0個月 → 6個月</div>
+            </div>
+            <div class="trend">
+              <div class="trend-name">糖化血色素 HbA1c</div>
+              <svg class="mini-chart" viewBox="0 0 220 90" aria-hidden="true">
+                <line class="chart-grid" x1="8" y1="72" x2="212" y2="72"/>
+                <polyline class="chart-line" points="12,24 55,29 98,38 142,50 205,64"/>
+              </svg>
+              <div class="trend-foot">0個月 → 6個月</div>
+            </div>
+          </div>
+          <div class="research-note">※ 圖表以趨勢呈現，不以單一結果代表個人效果；正式發布前請以最終研究資料與審稿版本為準。</div>
+        </section>
+
+        <p>看到這裡，林先生開始認真看待了，因為這些資料讓他看到，除了原本的治療與飲食控制之外，原來還可以從醣類消化與吸收的角度，來探討血糖管理。</p>
+        <p>他沒有停掉原本的藥，也沒有改掉醫師交代的治療方式。只是決定在原本的生活管理之外，多做一件事，而且這一次，他不想吃幾天就自己下結論。</p>
+        <p><span class="highlight">他給自己6個月。</span></p>
+
+        <section class="cta">
+          <div class="small">限時體驗</div>
+          <h3>告別起伏不定！新專利褐藻多酚</h3>
+          <p>填表登記想限時體驗優惠</p>
+          <!-- TODO: 將 #contact 換成實際表單網址 -->
+          <a class="btn" data-cta="register" href="#contact">馬上登記 →</a>
+        </section>
+
+        <h2 class="section-title">吃了幾天沒看到「神奇數字」，女兒說：先別急著看高低</h2>
+        <p>剛開始的時候，林先生其實沒有比較輕鬆。飯後照樣量，一看到數字，他還是會忍不住問女兒：</p>
+        <div class="dialogue">
+          <p>「今天這個好像還是蠻高的？」</p>
+          <p>「昨天比較低，今天怎麼又不一樣？」</p>
+        </div>
+        <p>女兒很冷靜地叫他先不要急著看單次結果。所以林先生開始把每天的紀錄留得更完整。</p>
+        <p>早餐吃什麼、午餐有沒有外食、晚上有沒有聚餐，都一起記。以前的他，只會盯著某一個數字。現在慢慢開始看一整段時間。</p>
+        <p>他才發現，原來血糖真的不是每天都會完全一樣。睡眠、活動量、吃飯內容，甚至當天的生活狀態，都可能讓數字出現差異。</p>
+        <p>也因為這樣，他開始不再只問：「今天有沒有比較低？」而是改問：「這段時間，飯後是不是沒有以前那麼容易大起大落？」</p>
+
+        <h2 class="section-title">第一個讓他有感的變化，不是「多低」，而是飯後沒那麼容易衝</h2>
+        <p>以前只要哪一餐稍微豐盛一點，林先生從吃飯的時候就會開始不安。</p>
+        <p>但現在，他慢慢發現自己沒有像以前那麼容易被單次數字嚇到。從一段時間的紀錄來看，他覺得自己的飯後變化開始比較有規律。</p>
+        <p>即使不是每一次都一模一樣，至少不像過去那麼常出現讓他措手不及的起伏。</p>
+        <p>這時候，女兒才再次跟他提到當初查到的那些資料：醣類吃進去後，需要經過 α-澱粉酶與 α-葡萄糖苷酶等消化酵素一步一步分解。</p>
+        <p>而褐藻多酚被研究的其中一個方向，就是對這些醣類消化酵素活性的抑制。</p>
+
+        <div class="metric-card">
+          <div class="metric">
+            <strong>81,000 IU/G</strong>
+            <span>α-澱粉酶抑制活性｜相關原料資料</span>
+          </div>
+          <div class="metric">
+            <strong>57,000 IU/G</strong>
+            <span>α-葡萄糖苷酶抑制活性｜相關原料資料</span>
+          </div>
+        </div>
+
+        <p>林先生這次終於懂了。所謂「從前端著手」，不是把吃進去的醣消失掉，也不是讓糖尿病患者從此什麼都能吃，而是從醣類被消化、分解的過程去理解：為什麼有些餐吃完，血糖會升得又快又急。</p>
+
+        <h2 class="section-title">6個月後再翻開紀錄，他最在意的已經不是某一次高低</h2>
+        <p>半年後，又到了固定回診的時間。這一次，林先生手上已經累積了半年的紀錄。</p>
+        <p>從餐前、飯後，到不同飲食狀況下的血糖變化，他終於可以拉長時間來看，而不是被某一天、某一餐的數字牽著走。</p>
+        <p>這也讓他更能理解，當初女兒找到的那份6個月人體試驗，為什麼不只觀察餐後變化，還同時追蹤空腹血糖與糖化血色素 HbA1c。</p>
+        <p>因為真正應該看的，是血糖能不能在一段時間裡逐漸趨於穩定。</p>
+        <p>這半年，林先生原本的藥物治療沒有停，飲食控制也沒有放掉；多做的，是從醣類消化、吸收的前端，再替餐後血糖多顧一道。</p>
+        <p>對他而言，最大的差別不是某一次量到特別漂亮的數字。而是回頭看這半年，那些曾經最讓他提心吊膽的飯後起伏，終於慢慢變得比較好掌握。</p>
+
+        <section class="cta">
+          <div class="small">LINE 諮詢</div>
+          <h3>體驗醣類代謝解方，找回平穩節奏</h3>
+          <p>專業顧問 1 對 1 諮詢</p>
+          <!-- TODO: 將 #contact 換成實際 LINE 網址 -->
+          <a class="btn" data-cta="line" href="#contact">馬上了解 →</a>
+        </section>
+
+        <section class="closing">
+          <p class="big">以前吃完飯像在等開獎，現在他終於可以好好吃一頓飯。</p>
+          <p>以前跟家人出去吃飯，林先生總有一個習慣。明明大家還在聊天，他腦中已經開始算：</p>
+          <div class="dialogue">
+            <p>「剛剛那碗飯會不會太多？」</p>
+            <p>「等等兩小時要記得量血糖。」</p>
+            <p>「今天不知道又會多高……」</p>
+          </div>
+          <p>一頓飯還沒真正結束，心早就先跑到血糖機前面。</p>
+          <p>半年後，他還是會量血糖、還是固定回診，也沒有因此覺得自己從此什麼都能吃。只是他終於不再對於吃飯這件事感到焦慮。</p>
+          <p>家人約吃飯，他願意一起去。偶爾遇到聚餐，也不會從第一口就開始後悔。</p>
+          <p>女兒後來問他：「你覺得這半年差最多的是什麼？」</p>
+          <p>林先生想了一下，只說：「以前我最怕的是吃完這一餐，血糖又不知道跑去哪裡。現在至少我不用每吃一口，都先擔心下一個數字。」</p>
+          <p>對一個和糖尿病相處6年的人來說，這樣的改變或許沒有什麼戲劇性的瞬間。但能重新坐在餐桌前，好好把一頓飯吃完，已經是他很久沒有過的輕鬆。</p>
+        </section>
+
+        <section id="contact" class="contact">
+          <div class="eyebrow" style="margin-bottom:4px">CONSULTATION</div>
+          <strong>專業顧問1對1客製諮詢</strong><br>
+          <a class="phone" data-cta="phone" href="tel:0800363888">0800-363-888</a>
+          <!-- TODO: CTA 實際表單 / LINE 連結確定後，修改上方兩個 CTA 的 href -->
+        </section>
+
+        <div class="disclaimer">
+          ※本頁內容僅供健康資訊參考，不作為醫療診斷、治療或處方依據；如有身體不適，請洽專業醫療人員。填寫表單或加入官方帳號後，您可能會收到產品資訊、優惠活動、健康資訊或客服聯繫等相關訊息。
+        </div>
+
+        <nav class="footer-links" aria-label="footer">
+          <!-- TODO: 替換正式連結 -->
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Scientific Research</a>
+        </nav>
+      </div>
+    </article>
+  </main>
+
+  <aside class="sticky" id="stickyCta">
+    <div class="sticky-inner">
+      <div class="sticky-copy">
+        <strong>前20名來電贈代謝保養祕方</strong>
+        <span>專業顧問1對1客製諮詢｜限量釋出</span>
+      </div>
+      <div class="sticky-actions">
+        <a class="sticky-phone" data-cta="sticky-phone" href="tel:0800363888">0800-363-888</a>
+        <!-- TODO: 若之後有表單或 LINE，可把 #contact 換成正式 URL -->
+        <a class="sticky-btn" data-cta="sticky-more" href="#contact">馬上諮詢</a>
+        <button class="close-sticky" aria-label="關閉置底按鈕" onclick="document.getElementById('stickyCta').style.display='none'">×</button>
+      </div>
+    </div>
+  </aside>
+
+  <script>
+    // CTA 之後若要串 GTM，可直接監聽 data-cta。
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click', function(e){
+        var id = this.getAttribute('href');
+        if(id && id !== '#'){
+          var el = document.querySelector(id);
+          if(el){
+            e.preventDefault();
+            el.scrollIntoView({behavior:'smooth', block:'center'});
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
 
