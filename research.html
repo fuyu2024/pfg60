@@ -1,1 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Scientific Research | Brown Algae Polyphenols</title>
+
+<meta name="description" content="Selected scientific research on brown algae polyphenols, carbohydrate-digesting enzymes, antioxidant activity, and metabolic parameters.">
+
+<style>
+:root{
+  --bg:#f5f5f2;
+  --paper:#ffffff;
+  --ink:#202421;
+  --muted:#6f756f;
+  --line:#dfe3df;
+  --deep:#183b32;
+  --green:#356b5c;
+  --soft:#eef3f0;
+  --serif:Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--sans);
+  line-height:1.8;
+  -webkit-font-smoothing:antialiased;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+
+.topbar{
+  background:#fff;
+  border-bottom:1px solid var(--line);
+}
+
+.topbar-inner{
+  max-width:920px;
+  margin:0 auto;
+  padding:19px 28px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.site-name{
+  font-family:var(--serif);
+  font-size:15px;
+  font-weight:700;
+  letter-spacing:.13em;
+  color:var(--deep);
+}
+
+.back-link{
+  font-size:12px;
+  color:var(--muted);
+  letter-spacing:.04em;
+}
+
+.back-link:hover{
+  color:var(--deep);
+}
+
+/* =========================
+   PAPER
+========================= */
+
+.paper{
+  width:calc(100% - 40px);
+  max-width:920px;
+  margin:42px auto 60px;
+  background:var(--paper);
+  border:1px solid var(--line);
+  box-shadow:0 12px 40px rgba(22,40,33,.05);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.paper-header{
+  padding:74px 74px 56px;
+  border-bottom:1px solid var(--line);
+}
+
+.paper-type{
+  font-size:10px;
+  font-weight:700;
+  color:var(--green);
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  margin-bottom:24px;
+}
+
+h1{
+  margin:0;
+  font-family:var(--serif);
+  color:#17221d;
+  font-size:46px;
+  line-height:1.12;
+  font-weight:500;
+  letter-spacing:-.02em;
+}
+
+.subtitle{
+  margin-top:22px;
+  max-width:700px;
+  font-family:var(--serif);
+  font-size:20px;
+  color:#4c5651;
+  line-height:1.55;
+}
+
+.meta{
+  margin-top:34px;
+  padding-top:20px;
+  border-top:1px solid var(--line);
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px 26px;
+  font-size:11px;
+  color:var(--muted);
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+/* =========================
+   ABSTRACT
+========================= */
+
+.abstract{
+  padding:46px 74px;
+  background:#fafbf9;
+  border-bottom:1px solid var(--line);
+}
+
+.abstract-label{
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.22em;
+  color:var(--green);
+  margin-bottom:14px;
+}
+
+.abstract p{
+  margin:0;
+  font-family:var(--serif);
+  font-size:16px;
+  line-height:1.9;
+  color:#424943;
+}
+
+/* =========================
+   ARTICLE BODY
+========================= */
+
+.article{
+  padding:20px 74px 70px;
+}
+
+.section{
+  padding:58px 0 54px;
+  border-bottom:1px solid var(--line);
+}
+
+.section:last-child{
+  border-bottom:none;
+}
+
+.section-number{
+  font-family:var(--serif);
+  font-size:13px;
+  color:var(--green);
+  letter-spacing:.12em;
+  margin-bottom:10px;
+}
+
+.section-kicker{
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:#818781;
+  margin-bottom:9px;
+}
+
+h2{
+  font-family:var(--serif);
+  color:#17251f;
+  font-weight:500;
+  font-size:30px;
+  line-height:1.3;
+  margin:0 0 25px;
+}
+
+p{
+  margin:0 0 20px;
+  font-size:15px;
+  color:#363c38;
+}
+
+p:last-child{
+  margin-bottom:0;
+}
+
+strong{
+  color:#1f3028;
+}
+
+/* =========================
+   KEY TERMS
+========================= */
+
+.definition{
+  margin:28px 0;
+  padding:23px 26px;
+  background:var(--soft);
+  border-left:3px solid var(--green);
+}
+
+.definition p{
+  margin:0;
+  font-size:14px;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table-wrap{
+  width:100%;
+  overflow-x:auto;
+  margin:32px 0;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  min-width:520px;
+}
+
+th{
+  padding:13px 16px;
+  text-align:left;
+  border-top:2px solid #273b32;
+  border-bottom:1px solid #273b32;
+  font-size:11px;
+  font-weight:700;
+  color:#3c4741;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+td{
+  padding:15px 16px;
+  border-bottom:1px solid var(--line);
+  font-family:var(--serif);
+  font-size:15px;
+}
+
+td:last-child,
+th:last-child{
+  text-align:right;
+}
+
+.highlight-row td{
+  background:#f4f7f5;
+  color:#204d3e;
+  font-weight:700;
+}
+
+/* =========================
+   LIMITATION / NOTE
+========================= */
+
+.research-note{
+  margin-top:30px;
+  padding:22px 25px;
+  border:1px solid var(--line);
+  background:#fcfcfb;
+  font-size:13px;
+  color:#626a65;
+}
+
+.research-note strong{
+  display:block;
+  font-size:10px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  margin-bottom:8px;
+  color:#37463f;
+}
+
+/* =========================
+   EVIDENCE POINTS
+========================= */
+
+.evidence-block{
+  display:grid;
+  grid-template-columns:150px 1fr;
+  gap:30px;
+  padding:24px 0;
+  border-top:1px solid var(--line);
+}
+
+.evidence-block:first-of-type{
+  margin-top:26px;
+}
+
+.evidence-term{
+  font-family:var(--serif);
+  color:var(--deep);
+  font-size:17px;
+}
+
+.evidence-text{
+  font-size:14px;
+  color:#444c47;
+}
+
+/* =========================
+   REFERENCES
+========================= */
+
+.references{
+  padding:52px 74px 58px;
+  background:#f7f8f6;
+  border-top:1px solid var(--line);
+}
+
+.references h2{
+  font-size:25px;
+  margin-bottom:30px;
+}
+
+.reference-item{
+  padding:18px 0;
+  border-top:1px solid var(--line);
+  font-family:var(--serif);
+  font-size:14px;
+  line-height:1.7;
+  color:#434b46;
+}
+
+.reference-item:first-of-type{
+  border-top:2px solid #3a4a42;
+}
+
+.reference-label{
+  display:block;
+  margin-bottom:5px;
+  font-family:var(--sans);
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  color:#818781;
+}
+
+/* =========================
+   DISCLAIMER
+========================= */
+
+.disclaimer{
+  padding:34px 74px;
+  border-top:1px solid var(--line);
+  background:#fff;
+  font-size:11px;
+  color:#777e79;
+  line-height:1.75;
+}
+
+.disclaimer strong{
+  color:#535d57;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  max-width:920px;
+  margin:0 auto 45px;
+  text-align:center;
+  font-size:11px;
+  color:#878c88;
+}
+
+footer a{
+  border-bottom:1px solid #bfc4c0;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:720px){
+
+  .topbar-inner{
+    padding:16px 20px;
+  }
+
+  .site-name{
+    font-size:12px;
+  }
+
+  .back-link{
+    font-size:11px;
+  }
+
+  .paper{
+    width:100%;
+    margin:0;
+    border-left:none;
+    border-right:none;
+    box-shadow:none;
+  }
+
+  .paper-header{
+    padding:50px 24px 40px;
+  }
+
+  h1{
+    font-size:36px;
+  }
+
+  .subtitle{
+    font-size:17px;
+  }
+
+  .meta{
+    display:block;
+  }
+
+  .meta span{
+    display:block;
+    margin-top:6px;
+  }
+
+  .abstract{
+    padding:34px 24px;
+  }
+
+  .abstract p{
+    font-size:15px;
+  }
+
+  .article{
+    padding:10px 24px 50px;
+  }
+
+  .section{
+    padding:46px 0 42px;
+  }
+
+  h2{
+    font-size:25px;
+  }
+
+  p{
+    font-size:15px;
+  }
+
+  .evidence-block{
+    grid-template-columns:1fr;
+    gap:7px;
+  }
+
+  .references{
+    padding:42px 24px;
+  }
+
+  .disclaimer{
+    padding:30px 24px;
+  }
+
+  footer{
+    padding:0 20px;
+    margin-top:30px;
+  }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="site-name">SCIENTIFIC RESEARCH</div>
+    <a href="/lin62/" class="back-link">← Back to Article</a>
+  </div>
+</header>
+
+
+<main class="paper">
+
+  <!-- =========================
+       TITLE
+  ========================== -->
+
+  <header class="paper-header">
+
+    <div class="paper-type">
+      Research Brief · Brown Algae Polyphenols
+    </div>
+
+    <h1>Brown Algae<br>Polyphenols</h1>
+
+    <div class="subtitle">
+      Selected Research on Carbohydrate-Digesting Enzymes,
+      Antioxidant Activity, and Metabolic Parameters
+    </div>
+
+    <div class="meta">
+      <span>Scientific Review</span>
+      <span>Marine Polyphenols</span>
+      <span>Educational Reference</span>
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       ABSTRACT
+  ========================== -->
+
+  <section class="abstract">
+
+    <div class="abstract-label">ABSTRACT</div>
+
+    <p>
+      Brown algae contain a distinctive group of marine polyphenols known as
+      phlorotannins. Current research has explored their chemical structure,
+      antioxidant activity, interactions with carbohydrate-digesting enzymes,
+      and possible relationships with metabolic parameters.
+      This page summarizes selected areas of scientific interest while
+      recognizing the limitations of laboratory assays and individual human studies.
+    </p>
+
+  </section>
+
+
+  <article class="article">
+
+
+    <!-- =========================
+         01
+    ========================== -->
+
+    <section class="section">
+
+      <div class="section-number">01</div>
+      <div class="section-kicker">Brown Algae Polyphenols</div>
+
+      <h2>Marine-Derived Bioactive Compounds</h2>
+
+      <p>
+        Brown algae contain a distinctive class of marine polyphenols known as
+        <strong>phlorotannins</strong>. These compounds are primarily composed
+        of phloroglucinol-based structural units and have attracted scientific
+        interest for their antioxidant properties and potential interactions
+        with biological processes related to carbohydrate digestion.
+      </p>
+
+      <p>
+        The biological activity of phlorotannins may vary considerably depending
+        on algal species, molecular structure, extraction method, concentration,
+        and experimental conditions.
+      </p>
+
+      <div class="definition">
+        <p>
+          Accordingly, findings obtained from a specific brown algae extract
+          should not automatically be generalized to all brown algae species
+          or phlorotannin preparations.
+        </p>
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         02
+    ========================== -->
+
+    <section class="section">
+
+      <div class="section-number">02</div>
+      <div class="section-kicker">Carbohydrate-Digesting Enzymes</div>
+
+      <h2>Interaction with α-Amylase and α-Glucosidase</h2>
+
+      <p>
+        Two enzymes are particularly relevant to the digestion of dietary carbohydrates.
+      </p>
+
+      <p>
+        <strong>α-Amylase</strong> participates in the initial breakdown of starch
+        into smaller carbohydrate molecules, while
+        <strong>α-glucosidase</strong> contributes to the subsequent conversion
+        of carbohydrates into absorbable monosaccharides.
+      </p>
+
+      <p>
+        Laboratory analyses of a brown algae polyphenol preparation have reported
+        measurable inhibitory activity against both enzymes:
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Enzyme Assay</th>
+              <th>Reported Activity</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="highlight-row">
+              <td>α-Amylase</td>
+              <td>81,000 IU/g</td>
+            </tr>
+
+            <tr class="highlight-row">
+              <td>α-Glucosidase</td>
+              <td>57,000 IU/g</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        These findings suggest that certain brown algae polyphenol preparations
+        may interact with more than one stage of carbohydrate digestion.
+      </p>
+
+      <div class="research-note">
+        <strong>Interpretation</strong>
+        Enzyme-inhibition assays are conducted under controlled experimental
+        conditions. In-vitro activity should not be interpreted as equivalent
+        to a glucose-lowering effect in humans. The magnitude and biological
+        relevance of such activity may depend on extract composition,
+        concentration, food matrix, digestion, absorption, and individual
+        metabolic characteristics.
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         03
+    ========================== -->
+
+    <section class="section">
+
+      <div class="section-number">03</div>
+      <div class="section-kicker">Antioxidant Activity</div>
+
+      <h2>Laboratory Assessment of Antioxidant Capacity</h2>
+
+      <p>
+        Phlorotannin-rich brown algae extracts have also been investigated for
+        their antioxidant properties using several laboratory assay systems.
+      </p>
+
+      <p>
+        In ORAC analysis, one brown algae polyphenol preparation demonstrated
+        a reported antioxidant capacity of <strong>89 μmol TE/mg</strong>.
+      </p>
+
+      <div class="table-wrap">
+        <table>
+
+          <thead>
+            <tr>
+              <th>Polyphenol Source</th>
+              <th>ORAC (μmol TE/mg)</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>Green Tea Extract</td>
+              <td>128</td>
+            </tr>
+
+            <tr>
+              <td>Cranberry Extract</td>
+              <td>91</td>
+            </tr>
+
+            <tr class="highlight-row">
+              <td>Brown Algae Polyphenols</td>
+              <td>89</td>
+            </tr>
+
+            <tr>
+              <td>Grape Seed Extract</td>
+              <td>81</td>
+            </tr>
+
+            <tr>
+              <td>Blueberry Extract</td>
+              <td>66</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+      </div>
+
+      <p>
+        Separate laboratory testing also reported measurable
+        superoxide-scavenging activity.
+      </p>
+
+      <div class="research-note">
+        <strong>Laboratory Context</strong>
+        These measurements provide a means of comparing antioxidant activity
+        under specific experimental conditions. They should not be interpreted
+        as direct measurements of antioxidant effects within the human body.
+        Absorption, metabolism, bioavailability, dosage, and physiological
+        conditions may substantially influence biological activity in vivo.
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         04
+    ========================== -->
+
+    <section class="section">
+
+      <div class="section-number">04</div>
+      <div class="section-kicker">Human Research</div>
+
+      <h2>Six-Month Observation of Metabolic Parameters</h2>
+
+      <p>
+        A six-month human study involving participants with prediabetes and
+        type 2 diabetes evaluated changes in several metabolic and anthropometric
+        parameters over the intervention period.
+      </p>
+
+      <p>
+        The reported mean values were:
+      </p>
+
+      <div class="table-wrap">
+        <table>
+
+          <thead>
+            <tr>
+              <th>Parameter</th>
+              <th>Baseline</th>
+              <th>Month 6</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>Waist Circumference</td>
+              <td>108.3 cm</td>
+              <td>102.7 cm</td>
+            </tr>
+
+            <tr>
+              <td>Fasting Plasma Glucose (FPG)</td>
+              <td>152 mg/dL</td>
+              <td>116.8 mg/dL</td>
+            </tr>
+
+            <tr>
+              <td>Postprandial Glucose (PPG)</td>
+              <td>188.3 mg/dL</td>
+              <td>156.2 mg/dL</td>
+            </tr>
+
+            <tr class="highlight-row">
+              <td>HbA1c</td>
+              <td>7.4%</td>
+              <td>6.6%</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+      </div>
+
+      <p>
+        Downward changes in these measured parameters were reported over the
+        six-month period.
+      </p>
+
+      <p>
+        These observations may provide a basis for further investigation into
+        the relationship between the studied brown algae-derived preparation
+        and metabolic parameters.
+      </p>
+
+      <div class="research-note">
+        <strong>Study Interpretation</strong>
+        The findings should be interpreted in the context of the study design,
+        participant characteristics, intervention composition, concurrent
+        treatment, dietary patterns, and other potentially relevant factors.
+        The results should not be interpreted as evidence that brown algae
+        polyphenols alone can prevent, treat, or reverse diabetes.
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         05
+    ========================== -->
+
+    <section class="section">
+
+      <div class="section-number">05</div>
+      <div class="section-kicker">Scientific Perspective</div>
+
+      <h2>What Does the Current Evidence Suggest?</h2>
+
+      <p>
+        Current laboratory and human research highlights several areas of
+        scientific interest surrounding brown algae polyphenols.
+      </p>
+
+
+      <div class="evidence-block">
+
+        <div class="evidence-term">
+          Carbohydrate<br>Digestion
+        </div>
+
+        <div class="evidence-text">
+          Laboratory studies suggest that certain phlorotannin-rich brown algae
+          extracts may interact with α-amylase and α-glucosidase, enzymes involved
+          in carbohydrate digestion.
+        </div>
+
+      </div>
+
+
+      <div class="evidence-block">
+
+        <div class="evidence-term">
+          Antioxidant<br>Activity
+        </div>
+
+        <div class="evidence-text">
+          Brown algae polyphenols demonstrate measurable antioxidant activity in
+          several in-vitro assay systems, although laboratory antioxidant capacity
+          does not directly represent antioxidant effects in humans.
+        </div>
+
+      </div>
+
+
+      <div class="evidence-block">
+
+        <div class="evidence-term">
+          Metabolic<br>Parameters
+        </div>
+
+        <div class="evidence-text">
+          Human studies involving specific brown algae preparations have reported
+          changes in glucose-related and other metabolic parameters. The clinical
+          significance and reproducibility of these observations require further
+          investigation.
+        </div>
+
+      </div>
+
+
+      <p style="margin-top:30px;">
+        Overall, these findings support continued scientific interest in brown
+        algae polyphenols. Interpretation should remain specific to the extract,
+        dosage, study population, and experimental design used in each investigation.
+      </p>
+
+      <p>
+        Further well-controlled human studies are needed to clarify their
+        biological relevance, reproducibility, optimal intake, and potential
+        long-term effects.
+      </p>
+
+    </section>
+
+  </article>
+
+
+  <!-- =========================
+       REFERENCES
+  ========================== -->
+
+  <section class="references">
+
+    <div class="section-kicker">Scientific Literature</div>
+    <h2>References & Research Context</h2>
+
+    <div class="reference-item">
+      <span class="reference-label">Research Area</span>
+      Brown algae polyphenols (phlorotannins), α-amylase and α-glucosidase
+      activity, antioxidant capacity, and metabolic parameters.
+    </div>
+
+    <div class="reference-item">
+      <span class="reference-label">Human Study</span>
+      Derosa G, et al. Human study evaluating metabolic parameters in
+      participants with prediabetes and type 2 diabetes.
+      <em>SINut, 2018.</em>
+    </div>
+
+    <div class="reference-item">
+      <span class="reference-label">Research Interpretation</span>
+      Results from individual studies should be interpreted according to the
+      population, intervention, methodology, dosage, and experimental conditions
+      reported in the original research.
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       DISCLAIMER
+  ========================== -->
+
+  <div class="disclaimer">
+
+    <strong>Research Note.</strong>
+    The information presented on this page is intended for scientific and
+    educational reference only. Laboratory findings do not necessarily translate
+    directly into clinical outcomes, and results obtained from an individual
+    extract or study should not be generalized to all brown algae extracts or
+    phlorotannin preparations.
+
+    <br><br>
+
+    This information is not intended to diagnose, treat, cure, or prevent any
+    disease and should not replace professional medical advice or prescribed
+    treatment.
+
+  </div>
+
+</main>
+
+
+<footer>
+  <a href="/lin62/">Return to Health Feature</a>
+</footer>
+
+
+</body>
+</html>
